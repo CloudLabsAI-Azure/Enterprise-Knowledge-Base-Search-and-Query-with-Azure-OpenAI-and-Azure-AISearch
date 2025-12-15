@@ -175,6 +175,9 @@ In this task, you will test the functionality of the deployed web app by browsin
     ```
     Give me an overview about this book
     ```
+    ```
+    Give me an overview in English about the book "Emil und die Detektive".
+    ```
 
     ![](./media/36.png)
 
