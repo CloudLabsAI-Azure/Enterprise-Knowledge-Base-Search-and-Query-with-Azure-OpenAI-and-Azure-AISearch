@@ -26,7 +26,7 @@ Azure OpenAI offers a web-based portal called **Microsoft Foundry portal** for d
 
 1. On the Azure portal, type **Azure OpenAI (1)** in the search box and select **Azure OpenAI (2)** from the results.
 
-    ![](./media/openai1upd.png)
+    ![](./media/lab1-12-01.png)
 
 1. On the **Microsoft Foundry | Azure OpenAI blade**, in the left pane under **Use with Foundry**, select **Azure OpenAI (1)**. Then click **+ Create (2)**, and from the dropdown, choose **Azure OpenAI (3)**.
 
