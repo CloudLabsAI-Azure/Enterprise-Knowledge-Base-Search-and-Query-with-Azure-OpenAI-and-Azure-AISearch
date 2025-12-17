@@ -78,9 +78,9 @@ In this task, you will configure the necessary environment variables. This invol
 
 1. Click on **Apply** and then select **Confirm** to save the changes.
 
-    ![](./media/18.png)
+    ![](./media/lab1-12-12.png)
 
-    ![](./media/19.png)
+    ![](./media/lab1-12-13.png)
 
 ### Task 3: Test the web app
 
@@ -90,7 +90,7 @@ In this task, you will test the functionality of the deployed web app by browsin
 
     ![](./media/24-07-2024(51).png)
 
-    > **Note**: If you encounter any errors while opening the web app, restart the web app, wait for 2-3 minutes, and then try again.
+    > **Note:** If you encounter any errors while opening the web app, restart the web app, wait for 2-3 minutes, and then try again.
 
 1. After the cold-start delay while your app's Docker image loads and starts, you'll see a page like the following image:
 
@@ -112,19 +112,19 @@ In this task, you will test the functionality of the deployed web app by browsin
 
     ![](./media/am21.png)
 
-1. On the Storage accounts page, select **storage<inject key="Deployment ID" enableCopy="false"></inject>**.
+1. On the **Storage center | Blob Storage** page, select **storage<inject key="Deployment ID" enableCopy="false"></inject>**.
 
-    ![](./media/22.png)
+    ![](./media/lab1-12-14.png)
 
-1. In the left-hand menu, select **Containers (1)** under **Data storage** section and open the **documents (2)** container.
+1. In the left-hand menu, select **Containers (2)** under **Data storage (1)** section and open the **documents (3)** container.
 
-    ![](./media/23.png)
+    ![](./media/lab1-12-15.png)
 
 1. Verify that the **sample-layout** file has been added to this container. You should also see a folder named **converted**, which contains the text version of the file processed by the Azure Functions.
 
-    ![](./media/24.png)
+    ![](./media/lab1-12-16.png)
 
-    ![](./media/25.png)
+    ![](./media/lab1-12-17.png)
 
 1. Return to the web app page, click on **Chat** and ask a question related to the **sample-layout** file. Below are the questions you can ask:
 
@@ -166,26 +166,23 @@ In this task, you will test the functionality of the deployed web app by browsin
 
 1. To confirm, return to the **storage<inject key="Deployment ID" enableCopy="false"></inject>** and open the **documents** container. Verify that the **Emil und die Detektive book** file has been added to this container. You should also see a folder named **converted**, which contains the text version of the file processed by the Azure Functions.
 
-    ![](./media/33.png)
+    ![](./media/lab1-12-18.png)
 
-    ![](./media/34.png)
+    ![](./media/lab1-12-19.png)
 
 1. Return to the web app page, click on **Chat** and ask a question related to the **Emil und die Detektive book** file. Below are the questions you can ask:
 
     ```
-    Give me an overview about this book
-    ```
-    ```
     Give me an overview in English about the book "Emil und die Detektive".
     ```
 
-    ![](./media/36.png)
+    ![](./media/lab1-12-20.png)
 
     ```
     What is the name of the main character in the book?
     ```
 
-    ![](./media/35.png)
+    ![](./media/lab1-12-21.png)
 
     >**Note:** The provided screenshot is for your reference; the output you receive may vary.
 
@@ -193,29 +190,29 @@ In this task, you will test the functionality of the deployed web app by browsin
 
     - The end-to-end process of managing and querying a knowledge base using Azure services. The workflow includes the following key steps:
 
-        - **Knowledge Base Storage**:
-            - **Azure Storage**: Stores unstructured documents such as PDFs, DOCX, and TXT files, providing a scalable and secure repository.
+        - **Knowledge Base Storage:**
+            - **Azure Storage:** Stores unstructured documents such as PDFs, DOCX, and TXT files, providing a scalable and secure repository.
 
-        - **Data Extraction**:
-            - **Azure Document Intelligence**: Automatically extracts paragraphs and dialogues from the raw documents, converting unstructured data into structured formats for further processing.
+        - **Data Extraction:**
+            - **Azure Document Intelligence:** Automatically extracts paragraphs and dialogues from the raw documents, converting unstructured data into structured formats for further processing.
             
-            - **Azure Translator**: Translates extracted text into the desired language, ensuring the system can handle multilingual queries and documents.
+            - **Azure Translator:** Translates extracted text into the desired language, ensuring the system can handle multilingual queries and documents.
 
-        - **Text Embedding and Indexing**:
-            - **Azure OpenAI Service Embeddings**: Converts the extracted text into high-dimensional vectors, encapsulating semantic meaning and context.
+        - **Text Embedding and Indexing:**
+            - **Azure OpenAI Service Embeddings:** Converts the extracted text into high-dimensional vectors, encapsulating semantic meaning and context.
             
-            - **Azure AI Search**: Indexes these embeddings, enabling fast and efficient vector-based searches across the knowledge base.
+            - **Azure AI Search:** Indexes these embeddings, enabling fast and efficient vector-based searches across the knowledge base.
 
-        - **Search and Answering**:
-            - **Vector Search**: Uses Azure OpenAI Embeddings to perform a semantic search, matching user queries to the most relevant documents based on vector similarity.
+        - **Search and Answering:**
+            - **Vector Search:** Uses Azure OpenAI Embeddings to perform a semantic search, matching user queries to the most relevant documents based on vector similarity.
             
-            - **Azure AI Search**: Retrieves the top k relevant paragraphs from the indexed documents.
+            - **Azure AI Search:** Retrieves the top k relevant paragraphs from the indexed documents.
 
-            - **Azure OpenAI Answering Prompt**: Constructs a concise and contextually accurate response from the retrieved paragraphs. If required, answers can be translated back to the user's preferred language.
+            - **Azure OpenAI Answering Prompt:** Constructs a concise and contextually accurate response from the retrieved paragraphs. If required, answers can be translated back to the user's preferred language.
 
 1. You can click on **Sources** to obtain the converted file in text format.
 
-    ![](./media/40.png)
+    ![](./media/lab1-12-22.png)
 
     ![](./media/41.png)
 

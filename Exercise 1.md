@@ -18,7 +18,7 @@ In this exercise, you will complete the following tasks:
 
 ## Task 1: Deploy Azure OpenAI and Models
 
-In this task, you will begin by deploying an Azure OpenAI resource through the Azure portal. This involves creating an OpenAI resource, configuring it with the appropriate settings, and deploying models such as **gpt-4.1** and **text-embedding-3-small** using Azure AI Foundry portal.
+In this task, you will begin by deploying an Azure OpenAI resource through the Azure portal. This involves creating an OpenAI resource, configuring it with the appropriate settings, and deploying models such as **gpt-4.1** and **text-embedding-ada-002** using Azure AI Foundry portal.
 
 Azure OpenAI offers a web-based portal called **Microsoft Foundry portal** for deploying, managing, and exploring models. Follow these steps to deploy a model using Microsoft Foundry portal:
 
@@ -28,9 +28,9 @@ Azure OpenAI offers a web-based portal called **Microsoft Foundry portal** for d
 
     ![](./media/openai1upd.png)
 
-1. On the **Microsoft Foundry | Azure OpenAI blade**, in the left pane under **Use with AI Foundry**, select **Azure OpenAI (1)**. Then click **+ Create (2)**, and from the dropdown, choose **Azure OpenAI (3)**.
+1. On the **Microsoft Foundry | Azure OpenAI blade**, in the left pane under **Use with Foundry**, select **Azure OpenAI (1)**. Then click **+ Create (2)**, and from the dropdown, choose **Azure OpenAI (3)**.
 
-    ![](./media/l12-12-01.png)
+    ![](./media/lab1-12-1.png)
 
 1. On the **Basics** tab of **Create Azure OpenAI** resource page, enter the following details and click on **Next (6)** button.
    
@@ -72,31 +72,31 @@ Azure OpenAI offers a web-based portal called **Microsoft Foundry portal** for d
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 <validation step="76158c08-a6fe-4e2f-ba59-d6556a5a88e4" />
 
-### Deploy Models in Azure AI Foundry portal
+### Deploy Models in Microsoft Foundry portal
 
-1. Go to the Azure OpenAI Overview page, and click **Go to Azure AI Foundry portal** to navigate to the Azure AI Foundry portal.
+1. Go to the Azure OpenAI Overview page, and click **Go to Foundry portal** to navigate to the Microsoft Foundry portal.
 
-    ![](./media/ee4.png)
+    ![](./media/lab1-12-2.png)
 
-1. In the Azure AI Foundry portal, navigate to **Deployments (1)**, select **+ Deploy model (2)**, and then choose **Deploy base model (3)**.
+1. In the Microsoft Foundry portal, navigate to **Deployments (1)**, select **+ Deploy model (2)**, and then choose **Deploy base model (3)**.
 
-    ![](./media/ee5.png)
+    ![](./media/lab1-12-3.png)
 
 1. On the Select a model page, search for **gpt-4.1 (1)**, select **gpt-4.1 (2)**, and click **Confirm (3)**.
 
-    ![](./media/l1-12-1.png)    
+    ![](./media/lab1-12-4.png)    
 
-1. In the Deploy model pop-up, enter the following details and click on the **Deploy (4)** button.
+1. In the Deploy model pop-up, enter the following details and click on the **Deploy (5)** button.
     
-    - Deployment name: **gpt-4.1**
+    - Deployment name: **gpt-4.1 (1)**
 
-    - Deployment type: **Standard (1)**
+    - Deployment type: **Standard (2)**
 
     - Click on **Customize** to expand the menu.
     
-    - Model version: **2025-04-14 (Default) (2)**
+    - Model version: **2025-04-14 (Default) (3)**
 
-    - Tokens per Minute Rate Limit (thousands): **40K  (3)**
+    - Tokens per Minute Rate Limit (thousands): **40K  (4)**
 
       ![](./media/l1-12-2.png) 
 
@@ -104,27 +104,27 @@ Azure OpenAI offers a web-based portal called **Microsoft Foundry portal** for d
 
 1. Repeat the process to create another deployment.
 
-1. In the Azure AI Foundry portal, navigate to **Deployments (1)**, select **+ Deploy model (2)**, and then choose **Deploy base model (3)**.
+1. In the Microsoft Foundry portal, navigate to **Deployments (1)**, select **+ Deploy model (2)**, and then choose **Deploy base model (3)**.
 
-    ![](./media/aifoundry2upd.png)
+    ![](./media/lab1-12-6.png)
 
 1. On the **Select a model** page, search for **text-embedding-ada-002 (1)**, select **text-embedding-ada-002 (2)**, and click **Confirm (3)**.
 
     ![](./media/l12-12-05.png)   
 
-1. In the Deploy model pop-up, enter the following details and click on the **Deploy (4)** button.
+1. In the Deploy model pop-up, enter the following details and click on the **Deploy (5)** button.
 
-    - Deployment name: **text-embedding-ada-002**
+    - Deployment name: **text-embedding-ada-002 (1)**
 
-    - Deployment type: **Standard (1)**
+    - Deployment type: **Standard (2)**
 
     - Click on **Customize** to expand the menu.
 
-    - Model version: **1 (Default) (2)**
+    - Model version: **2 (Default) (3)**
     
-    - Tokens per Minute Rate Limit (thousands): **40K (3)**
+    - Tokens per Minute Rate Limit (thousands): **40K (4)**
 
-      ![](./media/l12-12-06.png)  
+      ![](./media/lab1-12-7.png)  
 
       >**Note:** Copy the deployment name **text-embedding-ada-002** and save it in Notepad. You will use it later in the lab.
 
@@ -162,7 +162,7 @@ In this task, you will create the required Azure resources for AI Search, Docume
 
 1. Review the configuration, and click on **Create** button.
 
-     ![](./media/am25.png)
+     ![](./media/lab1-12-8.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
@@ -208,7 +208,7 @@ In this task, you will create the required Azure resources for AI Search, Docume
 
 1. On the Azure portal, type **Translators (1)** in the search box and select **Translators (2)** from the results.
 
-    ![](./media/am9.png)
+    ![](./media/lab1-12-9.png)
 
 1. On the **Microsoft Foundry | Translator** blade, click on **+ Create**.
 
@@ -291,7 +291,7 @@ In this task, you will deploy Azure Functions that automate the document process
     |**Open AI Name** | Openai-<inject key="Deployment ID" enableCopy="false"></inject> |
     |**Open AI Key** | Paste the OpenAI key that you copied in task 1 |
 
-      ![](./media/23052025(2).png)
+      ![](./media/lab1-12-10.png)
 
 1. Leave the other value as default and click on **Review + create** button, review the configuration, and click on **Create** button.
 
@@ -299,7 +299,7 @@ In this task, you will deploy Azure Functions that automate the document process
 
 1. Once the deployment is complete, click on the **Go to resource group** button.
 
-    ![](./media/24-07-2024(37).png)
+    ![](./media/lab1-12-11.png)
 
 1. On the **Overview** page of **Openai-embedded-<inject key="Deployment ID" enableCopy="false"></inject>** resource group, click on **Functionapp-<inject key="Deployment ID" enableCopy="false"></inject>** function app resource.
 
@@ -311,19 +311,19 @@ In this task, you will deploy Azure Functions that automate the document process
 
 1. The Azure Functions are triggered at different stages. Please find it in detail:
 
-    - **BatchStartProcessing**: When a document is uploaded to Azure Storage, it automatically triggers this Azure Function. This function acts as the initial step in the document processing pipeline. Here's how it works:
+    - **BatchStartProcessing:** When a document is uploaded to Azure Storage, it automatically triggers this Azure Function. This function acts as the initial step in the document processing pipeline. Here's how it works:
 
         - A blob trigger is set up on the Azure Function.
         - As soon as a new file is added to the specified Azure Storage container, the function is activated.
         - This function then initiates the document extraction process using Document intelligence.
 
-    - **BatchPushResults**: Once the paragraphs are extracted from the document, this Azure Function is triggered. This function handles two tasks:
+    - **BatchPushResults:** Once the paragraphs are extracted from the document, this Azure Function is triggered. This function handles two tasks:
 
         - If required, it translates the extracted text using Azure Translator.
         - It then converts the processed text into embeddings using the Azure OpenAI Service.
         - This function could be triggered by a queue message or by the completion of the first function.
 
-    - **ApiQnA**: When a user submits a search query, this Azure Function is triggered. This function performs several crucial steps:
+    - **ApiQnA:** When a user submits a search query, this Azure Function is triggered. This function performs several crucial steps:
 
         - It processes the user's query, potentially cleaning or formatting it.
         - It performs a vector search using the query against the stored embeddings.
@@ -347,7 +347,7 @@ In this task, you will deploy Azure Functions that automate the document process
 In this exercise, you have accomplished the following:
 
 - Provisioned an Azure OpenAI resource
-- Deployed an OpenAI model within the Azure AI Foundry portal
+- Deployed an OpenAI model within the Microsoft Foundry portal
 - Integrated Azure OpenAI models into your applications
 
 ### Click on **Next >>** to proceed to the next exercise.
