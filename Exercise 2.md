@@ -1,10 +1,12 @@
 # Exercise 2: Query and retrieval
 
-### Estimated Duration: 120 Minutes
+#### Estimated Duration: 120 Minutes
 
-In this exercise, you will create and deploy a web application from a Docker image in Azure, configure environment variables, and test the deployment.
+## Overview 
 
-## Lab objectives
+In this exercise, you will create and deploy a web application from a Docker image in Azure, configure environment variables, and test the web app.
+
+## Objectives
 
 In this exercise, you will complete the following tasks:
 
@@ -12,13 +14,13 @@ In this exercise, you will complete the following tasks:
 - Task 2: Add environment Variables and check the Docker deployment
 - Task 3: Test the web app
 
-## Task 1: Create and deploy a web app from a Docker image
+### Task 1: Create and deploy a web app from a Docker image
 
 In this task, you will create a new Azure Web App resource. The web app will be set up to use a Docker container from a specified image. You will configure the app with settings for subscription, resource group, and Linux plan, and then deploy the Docker image **fruocco/oai-embeddings:latest** to the web app.
 
-1. Click on the **+ Create a resource** button in the top left corner of the Azure Portal.
+1. Navigate to the Home page of the Azure portal by clicking on the **Microsoft Azure (1)** button, and select **+ Create a resource (2)**.
 
-    ![](./media/am16.png)
+    ![](./media/E2T1S1-2804.png)
 
 1. In the search box, type **Web app (1)**, select **Web App (2)** from the list of results, click on **Create (3)** and click on **Web App (4)**.
 
@@ -68,19 +70,19 @@ In this task, you will create a new Azure Web App resource. The web app will be 
 
 In this task, you will configure the necessary environment variables. This involves accessing the environment variables section in the web app settings, editing the values to match those provided in the previous exercise, and saving the changes.
 
-1. In the left-hand menu, select **Environment variables (1)** under **Settings** section and click on **Advanced edit (2)** at the top of the page to view or modify the environment variables.
+1. On the Web App page, in the left-hand menu, select **Environment variables (1)** under the **Settings** section and click on **Advanced edit (2)** at the top of the page to view or modify the environment variables.
 
     ![](./media/lab-04.png)
 
-1. In the advanced editor, delete the current values and paste the new values you copied from the Function App in the previous exercise. Then, click **OK**.
+1. In the advanced editor, delete the current values and paste the new values you copied from the Function App **(1)** in the previous exercise. Then, click **OK (2)**.
 
-    ![](./media/24-07-2024(50).png)
+    ![](./media/E2T2S2-2804.png)
 
-1. Click on **Apply** and then select **Confirm** to save the changes.
+1. Click on **Apply (1)** and then select **Confirm (2)** to save the changes.
 
-    ![](./media/lab1-12-12.png)
+    ![](./media/E2T2S3.1-2804.png)
 
-    ![](./media/lab1-12-13.png)
+    ![](./media/E2T2S3.2-2804.png)
 
 ### Task 3: Test the web app
 
@@ -110,7 +112,7 @@ In this task, you will test the functionality of the deployed web app by browsin
 
 1. To confirm, in the Azure Portal, type **Storage accounts (1)** in the search box and select **Storage accounts (2)** from the results.
 
-    ![](./media/am21.png)
+    ![](./media/E2T3S6-2804.png)
 
 1. On the **Storage center | Blob Storage** page, select **storage<inject key="Deployment ID" enableCopy="false"></inject>**.
 
@@ -126,19 +128,21 @@ In this task, you will test the functionality of the deployed web app by browsin
 
     ![](./media/lab1-12-17.png)
 
-1. Return to the web app page, click on **Chat** and ask a question related to the **sample-layout** file. Below are the questions you can ask:
+1. Return to the web app page, click on **Chat (1)**, and ask a question related to the **sample-layout** file. Below is a sample question **(2)** you can ask:
 
     ```
-    Give me an overview about sample layout
+    Give me an overview about sample layout document
     ```
 
-    ![](./media/37.png)
+    ![](./media/E2T3S10.1-2804.png)
+
+    ![](./media/E2T3S10.2-2804.png)    
 
     >**Note:** The provided screenshot is for your reference; the output you receive may vary.
 
 1. You can click on **Sources** to obtain the converted file in text format.
 
-    ![](./media/38.png)
+    ![](./media/E2T3S11-2804.png)
 
     ![](./media/39.png)
 
@@ -152,7 +156,7 @@ In this task, you will test the functionality of the deployed web app by browsin
 
 1. Once the file is opened, verify that it is in the **German language**. We will then use the web app to translate the file into English and obtain the results using OpenAI Chat.
 
-1. Return to the web app page, in the left-hand menu, select **Add Document (1)**, check the box for **Translate document to English (2)** and then click on **Browse files (3)**.
+1. Return to the web app page, in the left-hand menu, select **Add Document (1)**, check the box for **Translate document to English (2)**, and then click on **Browse files (3)**.
 
     ![](./media/29.png)
     
@@ -170,13 +174,15 @@ In this task, you will test the functionality of the deployed web app by browsin
 
     ![](./media/lab1-12-19.png)
 
-1. Return to the web app page, click on **Chat** and ask a question related to the **Emil und die Detektive book** file. Below are the questions you can ask:
+1. Return to the web app page, click on **Chat (1)** and ask a question related to the **Emil und die Detektive book** file. Below are the questions **(2)** you can ask:
 
     ```
     Give me an overview in English about the book "Emil und die Detektive".
     ```
 
-    ![](./media/lab1-12-20.png)
+    ![](./media/E2T3S19.1-2804.png)
+
+    ![](./media/E2T3S19.2-2804.png)
 
     ```
     What is the name of the main character in the book?
@@ -186,7 +192,7 @@ In this task, you will test the functionality of the deployed web app by browsin
 
     >**Note:** The provided screenshot is for your reference; the output you receive may vary.
 
-    ### How the File Translation is Managed?
+    ### How is the File Translation Managed?
 
     - The end-to-end process of managing and querying a knowledge base using Azure services. The workflow includes the following key steps:
 
@@ -232,4 +238,4 @@ In this exercise, you have accomplished the following:
 
 ### You have successfully completed the lab.
 
-By completing this lab **Enterprise Knowledge Base Search and Query with Azure OpenAI and Azure AI Search**, you gained practical experience in building intelligent search solutions powered by Azure’s AI services. You began by generating document embeddings with Azure OpenAI to capture semantic meaning and improve search relevance. You then implemented an advanced query and retrieval system using Azure AI Search, enabling efficient semantic search across the enterprise knowledge base. Additionally, you worked with Document Intelligence to extract structured data from documents and Translator to break language barriers, enhancing accessibility for global users. Finally, you automated the pipeline with Azure Functions, streamlining tasks such as document extraction, translation, embedding creation, and query handling. Through this integrated workflow, you developed a scalable knowledge search system that combines natural language understanding, multilingual support, and AI-driven insights to deliver accurate, context-aware results.
+By completing this lab, **Enterprise Knowledge Base Search and Query with Azure OpenAI and Azure AI Search**, you gained practical experience in building intelligent search solutions powered by Azure’s AI services. You began by generating document embeddings with Azure OpenAI to capture semantic meaning and improve search relevance. You then implemented an advanced query and retrieval system using Azure AI Search, enabling efficient semantic search across the enterprise knowledge base. Additionally, you worked with Document Intelligence to extract structured data from documents and Translator to break language barriers, enhancing accessibility for global users. Finally, you automated the pipeline with Azure Functions, streamlining tasks such as document extraction, translation, embedding creation, and query handling. Through this integrated workflow, you developed a scalable knowledge search system that combines natural language understanding, multilingual support, and AI-driven insights to deliver accurate, context-aware results.

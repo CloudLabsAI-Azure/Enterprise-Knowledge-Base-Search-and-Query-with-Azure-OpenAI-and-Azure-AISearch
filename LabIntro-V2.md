@@ -1,6 +1,6 @@
 # Enterprise Knowledge Base Search and Query with Azure OpenAI and Azure AI Search
 
-### Overall Estimated Duration: 4 Hours
+#### Overall Estimated Duration: 4 Hours
 
 ## Overview 
 
@@ -99,18 +99,10 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
    - **Enter Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
  
      ![](./media/am1.png)
- 
-1. If you see the pop-up Action Required, click Ask Later.
-
-   ![](media/asklater.png)
-
-   >**NOTE:** Do not enable MFA, select **Ask Later**.
      
 1. If you see the pop-up **Stay Signed in?**, select **No**.
 
    ![](media/Sign-in-no.png)
-
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
 1. If a **Welcome to Microsoft Azure** popup window appears, select **Cancel** to skip the tour.
    
