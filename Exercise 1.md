@@ -2,6 +2,10 @@
 
 #### Estimated Duration: 120 Minutes
 
+## Lab Scenario
+
+At Contoso Ltd, employees struggle to quickly find relevant information from a large collection of multilingual documents distributed across the organization. To address this challenge, the engineering team plans to build an AI-powered document processing pipeline using Azure services. The solution will automatically extract content from documents, translate text when required, and generate vector embeddings to support intelligent semantic search and accurate question-answering experiences.
+
 ## Overview
 
 In this exercise, you will gain hands-on experience in setting up a comprehensive Azure-based environment for embedding creation and document processing. The exercise is structured into two main parts:
@@ -84,6 +88,18 @@ Azure OpenAI offers a web-based portal called the **Microsoft Foundry portal** f
 1. From the Azure OpenAI Overview page, click **Go to Foundry portal** to navigate to the Microsoft Foundry portal.
 
     ![](./media/lab1-12-2.png)
+
+    > **Note**: 1. If the **Create a project** window is displayed, click the **Close (X)** icon in the upper-right corner to dismiss it.
+    >
+    >![](media/foundry.png)
+    > 
+    > If you are redirected to the new Microsoft Foundry portal, **toggle off** the switch located in the top-right corner.
+    >
+    >![](media/foundry-toggle.png)
+    >
+    >When the feedback pop-up appears, select **Continue without feedback**. You will then be redirected to the previous portal experience.
+    >
+    >![](media/feedbackpopup.png)
 
 1. In the Microsoft Foundry portal, navigate to **Deployments (1)**, select **+ Deploy model (2)**, and then choose **Deploy base model (3)**.
 
@@ -363,4 +379,4 @@ In this exercise, you have accomplished the following:
 
 ### Click on **Next >>** to proceed to the next exercise.
 
-![](./media/lab-02.png)
+![](./media/page_02.png)
