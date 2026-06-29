@@ -157,7 +157,7 @@ In this task, you will create the required Azure resources for AI Search, Docume
 
 ### Task 2.1: Create AI Search Service
 
-1. Navigate back to the Azure portal, type **AI Search (1)** in the search box, and select **AI Search (2)** from the results.
+1. Navigate back to the Azure portal, type **Azure AI Search (1)** in the search box, and select **Azure AI Search (Foundry IQ) (2)** from the results.
 
     ![](./media/E1T2S1-2804.png)
 
