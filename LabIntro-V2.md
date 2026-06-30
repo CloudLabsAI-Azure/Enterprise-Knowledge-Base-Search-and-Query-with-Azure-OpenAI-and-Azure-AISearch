@@ -86,6 +86,12 @@ To adjust the zoom level for the environment page, click the **A↕** icon locat
 
    ![](media/ee26.png)
 
+## Resize the Virtual Machine View
+
+Use the **slider (three vertical dots)** located between the **Virtual Machine** and the **Lab Guide** panes to adjust the display size, allowing you to customize the layout based on your preference.
+
+   ![](media/slider.png)
+
 ## Let's Get Started with Azure Portal
  
 1. On your virtual machine, click on the Azure Portal icon as shown below:
