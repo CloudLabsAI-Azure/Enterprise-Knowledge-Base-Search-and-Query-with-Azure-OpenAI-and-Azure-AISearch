@@ -2,19 +2,19 @@
 
 #### Estimated Duration: 120 Minutes
 
-## Lab Scenario
+## 📘 Lab Scenario
 
 At Contoso Ltd, employees struggle to quickly find relevant information from a large collection of multilingual documents distributed across the organization. To address this challenge, the engineering team plans to build an AI-powered document processing pipeline using Azure services. The solution will automatically extract content from documents, translate text when required, and generate vector embeddings to support intelligent semantic search and accurate question-answering experiences.
 
-## Overview
+## 📋 Overview
 
 In this exercise, you will gain hands-on experience in setting up a comprehensive Azure-based environment for embedding creation and document processing. The exercise is structured into two main parts:
 
-- **Configuring Azure Resources:** You will deploy and configure essential Azure services, including Azure OpenAI, Azure AI Search (Formerly known as Cognitive Search), Document Intelligence (Formerly known as Form Recognizer), and Translator. These resources are critical for the effective generation and management of document embeddings.
+- **Configuring Azure Resources:** You will deploy and configure essential Azure services, including Azure OpenAI, Azure AI Search (Foundry IQ), Document Intelligence, and Translator. These resources are critical for the effective generation and management of document embeddings.
 
 - **Deploying Azure Functions:** You will implement Azure Functions to automate and optimize the document processing pipeline. This involves configuring functions to handle document extraction, translation, embedding generation, and query processing.
 
-## Objectives
+## 🎯 Objectives
 
 In this exercise, you will complete the following tasks:
 
@@ -22,14 +22,14 @@ In this exercise, you will complete the following tasks:
   - Task 1.1: Deploy Azure OpenAI Resource
   - Task 1.2: Deploy Models in Microsoft Foundry portal
 - Task 2: Create Azure AI Search Resources
-  - Task 2.1: Create an AI Search Service
+  - Task 2.1: Create an AI Search(Foundry IQ) Service
   - Task 2.2: Create Document Intelligence Resource
   - Task 2.3: Create Translator Resource
 - Task 3: Deploy Azure Function with Embeddings  
 
 ### Task 1: Deploy Azure OpenAI Resource and Models
 
-In this task, you will begin by deploying an Azure OpenAI resource through the Azure portal. This involves creating an OpenAI resource, configuring it with the appropriate settings, and deploying models such as **gpt-4.1** and **text-embedding-ada-002** using the Azure AI Foundry portal.
+In this task, you will begin by deploying an Azure OpenAI resource through the Azure portal. This involves creating an OpenAI resource, configuring it with the appropriate settings, and deploying models such as **gpt-5.4** and **text-embedding-ada-002** using the Azure AI Foundry portal.
 
 Azure OpenAI offers a web-based portal called the **Microsoft Foundry portal** for deploying, managing, and exploring models. Follow these steps to deploy a model using the Microsoft Foundry portal:
 
@@ -43,7 +43,7 @@ Azure OpenAI offers a web-based portal called the **Microsoft Foundry portal** f
 
     ![](./media/lab1-12-1.png)
 
-1. On the **Basics** tab of **Create Azure OpenAI** resource page, enter the following details and click on **Next (6)** button.
+1. On the **Basics** tab of **Create Azure OpenAI** resource page, enter the following details and click on **Next (6)**.
    
     - **Subscription**: Default - Pre-assigned subscription  (1)
     
@@ -57,19 +57,19 @@ Azure OpenAI offers a web-based portal called the **Microsoft Foundry portal** f
 
       ![](./media/am23.png)
 
-1. On the **Network** tab, leave the value as default and click on **Next** button.
+1. On the **Network** tab, leave the value as default and click on **Next**.
 
     ![](./media/am3.png)
 
-1. On the **Tags** tab, leave the value as default and click on **Next** button.
+1. On the **Tags** tab, leave the value as default and click on **Next**.
 
     ![](./media/E1T1S5-2804.png)
   
-1. On the **Review + submit** tab, review the configuration, and click on **Create** button.
+1. On the **Review + submit** tab, review the configuration, and click on **Create**.
 
     ![](./media/am24.png)
 
-1. Once the deployment is complete, click on the **Go to resource** button.
+1. Once the deployment is complete, click on the **Go to resource**.
    
     ![](./media/24-07-2024(6).png)
 
@@ -105,25 +105,25 @@ Azure OpenAI offers a web-based portal called the **Microsoft Foundry portal** f
 
     ![](./media/lab1-12-3.png)
 
-1. On the Select a model page, search for **gpt-4.1 (1)**, select **gpt-4.1 (2)**, and click **Confirm (3)**.
+1. On the Select a model page, search for **gpt-5.4 (1)**, select **gpt-5.4 (2)**, and click **Confirm (3)**.
 
     ![](./media/lab1-12-4.png)    
 
-1. In the Deploy model pop-up, enter the following details and click on the **Deploy (5)** button.
+1. In the Deploy model pop-up, enter the following details and click on the **Deploy (5)**.
     
-    - Deployment name: **gpt-4.1 (1)**
+    - Deployment name: **gpt-5.4 (1)**
 
-    - Deployment type: **Standard (2)**
+    - Deployment type: **Global Standard (2)**
 
     - Click on **Customize** to expand the menu.
     
-    - Model version: **2025-04-14 (Default) (3)**
+    - Model version: **2026-03-05 (3)**
 
     - Tokens per Minute Rate Limit (thousands): **40K  (4)**
 
       ![](./media/l1-12-2.png) 
 
-      >**Note:** Copy the deployment name **gpt-4.1** and save it in Notepad. Will use it later in the lab.
+      >**Note:** Copy the deployment name **gpt-5.4** and save it in Notepad. Will use it later in the lab.
 
 1. Repeat the process to create another deployment.
 
@@ -131,11 +131,11 @@ Azure OpenAI offers a web-based portal called the **Microsoft Foundry portal** f
 
     ![](./media/lab1-12-6.png)
 
-1. On the **Select a model** page, search for **text-embedding-ada-002 (1)**, select **text-embedding-ada-002 (2)**, and click **Confirm (3)**.
+1. On the **Select a model** page, search for **text-embedding-ada-002 (1)**, select **text-embedding-ada-002 (2)**, and click on **Confirm (3)**.
 
     ![](./media/l12-12-05.png)   
 
-1. In the Deploy model pop-up, enter the following details and click on the **Deploy (5)** button.
+1. In the Deploy model pop-up, enter the following details and click on **Deploy (5)**.
 
     - Deployment name: **text-embedding-ada-002 (1)**
 
@@ -157,7 +157,7 @@ In this task, you will create the required Azure resources for AI Search, Docume
 
 ### Task 2.1: Create AI Search Service
 
-1. Navigate back to the Azure portal, type **Azure AI Search (1)** in the search box, and select **Azure AI Search (Foundry IQ) (2)** from the results.
+1. Navigate back to the Azure portal, type **AI Search (1)** in the search box, and select **AI Search (Foundry IQ) (2)** from the results.
 
     ![](./media/E1T2S1-2804.png)
 
@@ -183,7 +183,7 @@ In this task, you will create the required Azure resources for AI Search, Docume
 
       ![](./media/am6.png)
 
-1. Review the configuration, and click on the **Create** button.
+1. Review the configuration, and click on **Create**.
 
      ![](./media/lab1-12-8.png)
 
@@ -217,7 +217,7 @@ In this task, you will create the required Azure resources for AI Search, Docume
 
       ![](./media/am8.png)
         
-1. Click on **Review + create** button, review the configuration, and click on **Create** button.
+1. Click on **Review + create**, review the configuration, and click on **Create**.
 
     ![](./media/am26.png)
 
@@ -233,7 +233,7 @@ In this task, you will create the required Azure resources for AI Search, Docume
 
     ![](./media/E1T2.3S1-2804.png)
 
-1. On the **Microsoft Foundry | Translator(1)** blade, click on **+ Create(2)**.
+1. On the **Microsoft Foundry | Translator (1)** blade, click on **+ Create (2)**.
 
     ![](./media/l1-12-6.png)
 
@@ -249,11 +249,11 @@ In this task, you will create the required Azure resources for AI Search, Docume
     
     - Pricing tier: **Standard S1 (Pay as you go) (5)**
 
-    - Click on **Review + create (6)** button
+    - Click on **Review + create (6)**
 
       ![](./media/am10.png)
     
-1. Review the configuration, and click on the **Create** button.
+1. Review the configuration, and click on the **Create**.
 
     ![](./media/am27.png)
 
@@ -285,7 +285,7 @@ In this task, you will deploy Azure Functions that automate the document process
 
     ![](./media/am14.png)
 
-1. Paste the template you copied in step 2, in the ARM template editor, locate the **OpenAIEngine** parameter and verify the **defaultValue** **(line no: 97)** is set to `gpt-4.1` **(1)**. Also verify that **OpenAIDeploymentType** **(line no: 104)** is set to `Chat` **(2)**.
+1. Paste the template you copied in step 2, in the ARM template editor, locate the **OpenAIEngine** parameter and verify the **defaultValue** **(line no: 97)** is set to `gpt-5.4` **(1)**. Also verify that **OpenAIDeploymentType** **(line no: 104)** is set to `Chat` **(2)**.
 
      ![](./media/l12-12-03.png)
 
@@ -293,7 +293,7 @@ In this task, you will deploy Azure Functions that automate the document process
 
      ![](./media/l12-12-07.png)
 
-1. Click on the **Save** button.
+1. Click on the **Save**.
 
     ![](./media/24-07-2024(33).png)
 
@@ -314,15 +314,15 @@ In this task, you will deploy Azure Functions that automate the document process
     |**Document Intelligence** |Document-intelligence-<inject key="Deployment ID" enableCopy="false"></inject> |
     |**Translator Name** | Translator-<inject key="Deployment ID" enableCopy="false"></inject> |
     |**Open AI Name** | Openai-<inject key="Deployment ID" enableCopy="false"></inject> |
-    |**Open AI Key** | Paste the OpenAI key that you copied in task 1 |
+    |**Open AI Key** | Paste the OpenAI key that you copied in Task 1.1, Point 8 |
 
       ![](./media/lab1-12-10.png)
 
-1. Leave the other value as default and click on the **Review + create** button, review the configuration, and click on the **Create** button.
+1. Leave the other value as default and click on **Review + create**, review the configuration, and click on **Create**.
 
     ![](./media/23052025(3).png)
 
-1. Once the deployment is complete, click on the **Go to resource group** button.
+1. Once the deployment is complete, click on **Go to resource group**.
 
     >**Note:** The deployment may take around 15-20 minutes to complete, as it is deploying multiple resources and Azure Functions.
 
@@ -369,13 +369,16 @@ In this task, you will deploy Azure Functions that automate the document process
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 <validation step="da23d4f2-068b-4149-8071-9870b25d261d" />
 
-## Summary
+## 🧾 Summary
 
 In this exercise, you have accomplished the following:
 
-- Provisioned an Azure OpenAI resource
-- Deployed an OpenAI model within the Microsoft Foundry portal
-- Integrated Azure OpenAI models into your applications
+- Provisioned an Azure OpenAI resource.
+- Deployed Azure OpenAI models using the Microsoft Foundry portal.
+- Deployed a Document Intelligence resource.
+- Deployed a Translator resource.
+- Deployed a Custom template
+- Integrated Azure OpenAI models into your application.
 
 ### Click on **Next >>** to proceed to the next exercise.
 
