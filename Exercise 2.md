@@ -2,15 +2,15 @@
 
 #### Estimated Duration: 120 Minutes
 
-## Lab Scenario
+## 📘 Lab Scenario
 
 At Contoso Ltd., the engineering team needs a simple way for employees to interact with the AI-powered knowledge base. To achieve this, the team plans to deploy a containerized web application on Azure using a pre-built Docker image. The application will connect to the Azure services configured earlier, enabling users to upload documents, generate embeddings, perform semantic searches, and receive accurate answers from the knowledge base. The solution also supports multilingual documents by translating content in real time before retrieval and response generation.
 
-## Overview 
+## 📋 Overview 
 
 In this exercise, you will create and deploy a web application from a Docker image in Azure, configure environment variables, and test the web app.
 
-## Objectives
+## 🎯 Objectives
 
 In this exercise, you will complete the following tasks:
 
@@ -22,7 +22,7 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will create a new Azure Web App resource. The web app will be set up to use a Docker container from a specified image. You will configure the app with settings for subscription, resource group, and Linux plan, and then deploy the Docker image **fruocco/oai-embeddings:latest** to the web app.
 
-1. Navigate to the Home page of the Azure portal by clicking on the **Microsoft Azure (1)** button, and select **+ Create a resource (2)**.
+1. Navigate to the Home page of the Azure portal by clicking on the **Microsoft Azure (1)** and select **+ Create a resource (2)**.
 
     ![](./media/E2T1S1-2804.png)
 
@@ -30,7 +30,7 @@ In this task, you will create a new Azure Web App resource. The web app will be 
 
     ![](./media/am17.png)
 
-1. On the **Basics** tab of **Create Web App** resource page, enter the following details and click on **Next : Database > (9)** button.
+1. On the **Basics** tab of **Create Web App** resource page, enter the following details and click on **Next : Database > (9)**.
    
     - Subscription: **Default - Pre-assigned subscription (1)**
     
@@ -54,7 +54,7 @@ In this task, you will create a new Azure Web App resource. The web app will be 
 
     ![](./media/database.png)
 
-1. On the **Container** tab, enter the following details and click on **Review + create (4)** button.
+1. On the **Container** tab, enter the following details and click on **Review + create (4)**.
 
    - Image Source: Select **Other container registries (1)**
 
@@ -64,11 +64,11 @@ In this task, you will create a new Azure Web App resource. The web app will be 
 
      ![](./media/ee14.png)
     >**Note:** Please recheck the image and tag name again to avoid further errors in the lab.
-1. On the **Review + create** tab, review the configuration, and click on **Create** button.
+1. On the **Review + create** tab, review the configuration, and click on **Create**.
 
     ![](./media/am19.png)
 
-1. Once the deployment is complete, click on the **Go to resource** button.
+1. Once the deployment is complete, click on **Go to resource**.
    
     ![](./media/am20.png)
 
@@ -234,16 +234,18 @@ In this task, you will test the functionality of the deployed web app by browsin
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 <validation step="0235891a-6654-4d5d-82b8-af3b6a5346e0" />
 
-## Summary
+## 🧾 Summary
 
 In this exercise, you have accomplished the following:
 
 - Created and deployed a web app from a Docker image
 - Added environment variables and checked the Docker deployment
+- Varified the uploaded file in the Storage account
 - Tested the web app
+
 
 ## Conclusion
 
 By completing this lab, **Enterprise Knowledge Base Search and Query with Azure OpenAI and Azure AI**, you gained practical experience in building intelligent search solutions powered by Azure’s AI services. You began by generating document embeddings with Azure OpenAI to capture semantic meaning and improve search relevance. You then implemented an advanced query and retrieval system using Azure AI Search Search, enabling efficient semantic search across the enterprise knowledge base. Additionally, you worked with Document Intelligence to extract structured data from documents and Translator to break language barriers, enhancing accessibility for global users. Finally, you automated the pipeline with Azure Functions, streamlining tasks such as document extraction, translation, embedding creation, and query handling. Through this integrated workflow, you developed a scalable knowledge search system that combines natural language understanding, multilingual support, and AI-driven insights to deliver accurate, context-aware results.
 
-### You have successfully completed the lab.
+### 🎉 You have successfully completed the lab.
