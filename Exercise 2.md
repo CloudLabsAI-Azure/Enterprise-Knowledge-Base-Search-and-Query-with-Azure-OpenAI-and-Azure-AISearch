@@ -62,8 +62,9 @@ In this task, you will create a new Azure Web App resource. The web app will be 
 
    - Image and tag: Enter **yashmadan1357/prod-oai-embeddings-webapp:latest (3)**
 
-     ![](./media/ee14.png)
-    >**Note:** Please recheck the image and tag name again to avoid further errors in the lab.
+     ![](./media/docker.png)
+
+        >**Note:** Please recheck the image and tag name again to avoid further errors in the lab.
     
 1. On the **Review + create** tab, review the configuration, and click on **Create**.
 
