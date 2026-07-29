@@ -2,7 +2,7 @@
 
 #### Estimated Duration: 120 Minutes
 
-## 📘 Lab Scenario
+## 📘 Scenario
 
 At Contoso Ltd., the engineering team needs a simple way for employees to interact with the AI-powered knowledge base. To achieve this, the team plans to deploy a containerized web application on Azure using a pre-built Docker image. The application will connect to the Azure services configured earlier, enabling users to upload documents, generate embeddings, perform semantic searches, and receive accurate answers from the knowledge base. The solution also supports multilingual documents by translating content in real time before retrieval and response generation.
 
@@ -20,7 +20,7 @@ In this exercise, you will complete the following tasks:
 
 ### Task 1: Create and deploy a web app from a Docker image
 
-In this task, you will create a new Azure Web App resource. The web app will be set up to use a Docker container from a specified image. You will configure the app with settings for subscription, resource group, and Linux plan, and then deploy the Docker image **fruocco/oai-embeddings:latest** to the web app.
+In this task, you will create a new Azure Web App resource. The web app will be set up to use a Docker container from a specified image. You will configure the app with settings for subscription, resource group, and Linux plan, and then deploy the Docker image **yashmadan1357/prod-oai-embeddings-webapp:latest** to the web app.
 
 1. Navigate to the Home page of the Azure portal by clicking on the **Microsoft Azure (1)** and select **+ Create a resource (2)**.
 
@@ -30,25 +30,23 @@ In this task, you will create a new Azure Web App resource. The web app will be 
 
     ![](./media/am17.png)
 
-1. On the **Basics** tab of **Create Web App** resource page, enter the following details and click on **Next : Database > (9)**.
+1. On the **Basics** tab of **Create Web App** resource page, enter the following details and click on **Next : Database > (8)**.
    
     - Subscription: **Default - Pre-assigned subscription (1)**
     
     - Resource group: Select **Openai-embedded-<inject key="Deployment ID" enableCopy="false"></inject> (2)**
     
     - Name: **Webapp-<inject key="Deployment ID" enableCopy="false"></inject> (3)**
-
-    - Secure a unique default hostname: **Turn off (4)**
     
-    - Publish: Choose **Container (5)**
+    - Publish: Choose **Container (4)**
    
-    - Operating System: Choose **Linux (6)**
+    - Operating System: Choose **Linux (5)**
    
-    - Region: Select **<inject key="Region" enableCopy="false" /> (7)**
+    - Region: Select **<inject key="Region" enableCopy="false" /> (6)**
 
-    - Linux Plan: Select an existing plan i.e. **hostingplan-<inject key="Deployment ID" enableCopy="false"></inject> (B3)**  **(8)**
+    - Linux Plan: Select an existing plan i.e. **hostingplan-<inject key="Deployment ID" enableCopy="false"></inject> (B3)**  **(7)**
 
-      ![](./media/am18.png)
+      ![](./media/new05.png)
 
 1. On the **Database** tab, keep the default settings and click on **Next : Container >**.
 
@@ -162,7 +160,7 @@ In this task, you will test the functionality of the deployed web app by browsin
 
     ![](./media/28.png)
 
-1. Once the file is opened, verify that it is in the **German language**. We will then use the web app to translate the file into English and obtain the results using OpenAI Chat.
+1. Once the file is opened, verify that it is in the **German language**. We will then use the web app to translate the file into English and obtain the results using Foundry Chat.
 
 1. Return to the web app page, in the left-hand menu, select **Add Document (1)**, check the box for **Translate document to English (2)**, and then click on **Browse files (3)**.
 
@@ -213,16 +211,16 @@ In this task, you will test the functionality of the deployed web app by browsin
             - **Azure Translator:** Translates extracted text into the desired language, ensuring the system can handle multilingual queries and documents.
 
         - **Text Embedding and Indexing:**
-            - **Azure OpenAI Service Embeddings:** Converts the extracted text into high-dimensional vectors, encapsulating semantic meaning and context.
+            - **Microsoft Foundry Service Embeddings:** Converts the extracted text into high-dimensional vectors, encapsulating semantic meaning and context.
             
             - **Azure AI Search:** Indexes these embeddings, enabling fast and efficient vector-based searches across the knowledge base.
 
         - **Search and Answering:**
-            - **Vector Search:** Uses Azure OpenAI Embeddings to perform a semantic search, matching user queries to the most relevant documents based on vector similarity.
+            - **Vector Search:** Uses Microsoft Foundry Embeddings to perform a semantic search, matching user queries to the most relevant documents based on vector similarity.
             
             - **Azure AI Search:** Retrieves the top k relevant paragraphs from the indexed documents.
 
-            - **Azure OpenAI Answering Prompt:** Constructs a concise and contextually accurate response from the retrieved paragraphs. If required, answers can be translated back to the user's preferred language.
+            - **Microsoft Foundry Answering Prompt:** Constructs a concise and contextually accurate response from the retrieved paragraphs. If required, answers can be translated back to the user's preferred language.
 
 1. You can click on **Sources** to obtain the converted file in text format.
 
@@ -248,6 +246,6 @@ In this exercise, you have accomplished the following:
 
 ## Conclusion
 
-By completing this lab, **Enterprise Knowledge Base Search and Query with Azure OpenAI and Azure AI**, you gained practical experience in building intelligent search solutions powered by Azure’s AI services. You began by generating document embeddings with Azure OpenAI to capture semantic meaning and improve search relevance. You then implemented an advanced query and retrieval system using Azure AI Search Search, enabling efficient semantic search across the enterprise knowledge base. Additionally, you worked with Document Intelligence to extract structured data from documents and Translator to break language barriers, enhancing accessibility for global users. Finally, you automated the pipeline with Azure Functions, streamlining tasks such as document extraction, translation, embedding creation, and query handling. Through this integrated workflow, you developed a scalable knowledge search system that combines natural language understanding, multilingual support, and AI-driven insights to deliver accurate, context-aware results.
+By completing this lab, **Enterprise Knowledge Base Search and Query with Microsoft Foundry and Azure AI**, you gained practical experience in building intelligent search solutions powered by Azure’s AI services. You began by generating document embeddings with Microsoft Foundry to capture semantic meaning and improve search relevance. You then implemented an advanced query and retrieval system using Azure AI Search Search, enabling efficient semantic search across the enterprise knowledge base. Additionally, you worked with Document Intelligence to extract structured data from documents and Translator to break language barriers, enhancing accessibility for global users. Finally, you automated the pipeline with Azure Functions, streamlining tasks such as document extraction, translation, embedding creation, and query handling. Through this integrated workflow, you developed a scalable knowledge search system that combines natural language understanding, multilingual support, and AI-driven insights to deliver accurate, context-aware results.
 
 ### 🎉 You have successfully completed the lab.

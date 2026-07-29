@@ -4,15 +4,15 @@
       "Language": "English",
       "Files": [
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Enterprise-Knowledge-Base-Search-and-Query-with-Azure-OpenAI-and-Azure-AISearch/main/LabIntro-V2.md",
+          "RawFilePath": "https://raw.githubusercontent.com/vishalv-spektra/Enterprise-Knowledge-Base-Search-and-Query-with-Azure-OpenAI-and-Azure-AISearch/refs/heads/version2/LabIntro-V2.md",
           "Order": 1
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Enterprise-Knowledge-Base-Search-and-Query-with-Azure-OpenAI-and-Azure-AISearch/main/Exercise%201.md",
+          "RawFilePath": "https://raw.githubusercontent.com/vishalv-spektra/Enterprise-Knowledge-Base-Search-and-Query-with-Azure-OpenAI-and-Azure-AISearch/refs/heads/version2/Exercise%201.md",
           "Order": 2
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Enterprise-Knowledge-Base-Search-and-Query-with-Azure-OpenAI-and-Azure-AISearch/main/Exercise%202.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Enterprise-Knowledge-Base-Search-and-Query-with-Azure-OpenAI-and-Azure-AISearch/refs/heads/version2//Exercise%202.md",
           "Order": 3
         }
       ]
