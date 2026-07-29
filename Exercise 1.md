@@ -255,6 +255,8 @@ In this task, you will deploy Azure Functions that automate the document process
 
     ![](./media/am12.png)
 
+    >Note: The `deploy-01.json` file is an Azure Resource Manager (ARM) template that automates the deployment of the infrastructure required for this lab. It defines resources such as the Storage Account, Azure Function App, Azure AI Search, Azure AI Document Intelligence, Translator, and Microsoft Foundry integration, along with their configurations and application settings. During the lab, you will update a few parameters in this template before deploying the complete solution.
+
 1. Navigate back to the Azure Portal, type **Deploy a custom template (1)** in the search box, and select **Deploy a custom template (2)** from the results.
 
     ![](./media/E1T3S4-2804.png)
