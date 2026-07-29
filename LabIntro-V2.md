@@ -1,4 +1,4 @@
-# Enterprise Knowledge Base Search and Query with Microsoft Foundry and Azure AI Search (Foundry IQ)
+# Enterprise Knowledge Base Search and Query with Microsoft Foundry and Azure AI Search
 
 #### Overall Estimated Duration: 4 Hours
 
