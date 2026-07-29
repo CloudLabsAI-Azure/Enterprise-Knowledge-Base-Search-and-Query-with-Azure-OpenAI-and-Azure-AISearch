@@ -71,7 +71,7 @@ In this task, you will deploy the AI models required for the lab using Microsoft
 
 1. In the **Microsoft Foundry** resource click on **Go to Foundry portal**.
 
-    ![](media/foundry5.png)
+    ![](media/foundry5-new.png)
 
 1. Copy the **API key** from the proj-default.
 
