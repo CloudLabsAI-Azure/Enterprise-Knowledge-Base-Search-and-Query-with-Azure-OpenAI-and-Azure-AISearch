@@ -4,7 +4,7 @@
 
 ## 📘 Lab Scenario
 
-You are part of the AI engineering team at Contoso Ltd, where employees struggle to quickly find accurate information from thousands of unstructured, multilingual documents such as manuals, policies, and reports. To solve this challenge, the team is building an AI-powered knowledge base that automatically processes documents, generates semantic embeddings using Microsoft Foundry, and enables intelligent search through Azure AI Search, all accessible through a simple chat interface.
+You are part of the AI engineering team at Contoso Ltd, where employees struggle to quickly find accurate information from thousands of unstructured, multilingual documents such as manuals, policies, and reports. To solve this challenge, the team is building an AI-powered knowledge base that automatically processes documents, generates semantic embeddings using Microsoft Foundry, and enables intelligent search through Azure AI Search (Foundry IQ), all accessible through a simple chat interface.
 
 ## 📖 Lab Overview
 
@@ -16,7 +16,7 @@ By the end of this lab, you will have:
 
 - **Embedding Creation:** Develop high-quality embeddings for documents and queries within the enterprise knowledge base to enhance semantic understanding and improve search relevance. This involves leveraging Microsoft Foundry to generate contextually rich embeddings that capture the nuances of the information, allowing for more accurate comparisons between user queries and stored knowledge.
 
-- **Query and Retrieval:** Implement an efficient query and retrieval system using Azure AI Search that utilizes the embeddings created to facilitate rapid, accurate responses to user inquiries. The goal is to optimize the search process by enabling semantic search capabilities, ensuring that users can easily find relevant information within the knowledge base, thus improving overall productivity and decision-making.
+- **Query and Retrieval:** Implement an efficient query and retrieval system using Azure AI Search (Foundry IQ) that utilizes the embeddings created to facilitate rapid, accurate responses to user inquiries. The goal is to optimize the search process by enabling semantic search capabilities, ensuring that users can easily find relevant information within the knowledge base, thus improving overall productivity and decision-making.
 
 ## ⚙️ Prerequisites
 
@@ -25,13 +25,13 @@ Participants should have:
 - An Azure Entra ID user account with sufficient permissions to create and manage resources within the Azure subscription.
 - **Basic Understanding of Azure Services:** Familiarity with Azure's ecosystem and its core services helps in navigating the platform effectively.
 - **Familiarity with Natural Language Processing (NLP) Concepts:** Understanding NLP fundamentals is essential for leveraging language models in AI applications.
-- **Experience with APIs:** Knowledge of how to interact with APIs is crucial for integrating Microsoft Foundry and Azure AI Search into applications.
+- **Experience with APIs:** Knowledge of how to interact with APIs is crucial for integrating Microsoft Foundry and Azure AI Search (Foundry IQ) into applications.
 - **Knowledge of Search Technologies:** Familiarity with search algorithms and indexing improves the implementation of effective search solutions.
 - **Proficiency in Programming Languages (e.g., Python, C#):** Basic programming skills are necessary for developing and customizing applications using Azure services.
 
 ## 🏗️ Architecture
 
-The process involves storing documents in Azure Storage Accounts, with optional translation and text extraction using a Function App. Text is then converted into embeddings by a Microsoft Foundry embedding model and stored in Azure AI Search for efficient retrieval. When a query is submitted, it is vectorized and used to search for relevant content in Azure AI Search. The search results are processed by a Microsoft Foundry language model to generate a response. This workflow uses Azure services, including Storage Accounts, Function Apps, Document Intelligence, Microsoft Foundry models, and Azure AI Search.
+The process involves storing documents in Azure Storage Accounts, with optional translation and text extraction using a Function App. Text is then converted into embeddings by a Microsoft Foundry embedding model and stored in Azure AI Search for efficient retrieval. When a query is submitted, it is vectorized and used to search for relevant content in Azure AI Search (Foundry IQ). The search results are processed by a Microsoft Foundry language model to generate a response. This workflow uses Azure services, including Storage Accounts, Function Apps, Document Intelligence, Microsoft Foundry models, and Azure AI Search.
 
 ## 🖼️ Architecture Diagram
 
@@ -45,13 +45,13 @@ The architecture for this lab involves the following key components:
 - **Function App:** A serverless compute service in Azure that automates tasks such as translating documents (if needed) and extracting text from them. It processes the documents and prepares the text for further steps.
 - **Microsoft Foundry Embedding Model:** Converts the extracted text into embeddings, which are vector representations capturing the semantic meaning of the text. These embeddings are used for efficient content retrieval.
 - **Azure AI Search (Foundry IQ):** Stores the embeddings and enables powerful search capabilities. It allows for fast and accurate retrieval of relevant content based on similarity to a user's query.
-- **Microsoft Foundry Language Model:** Utilizes the search results from Azure AI Search to generate a response. It applies advanced language processing to create coherent and contextually appropriate answers.
+- **Microsoft Foundry Language Model:** Utilizes the search results from Azure AI Search (Foundry IQ) to generate a response. It applies advanced language processing to create coherent and contextually appropriate answers.
 - **Document Intelligence:** Provides capabilities to extract structured information from various types of documents, such as invoices and receipts, which can be used to enrich the data before embedding.
 - **Translator:** An optional service that translates text into different languages, making the content accessible to users who speak different languages.
 
 ## 🚀 Getting Started with the Lab
 
-Welcome to your Enterprise Knowledge Base Search and Query with Microsoft Foundry and Azure AI Search workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
+Welcome to your Enterprise Knowledge Base Search and Query with Microsoft Foundry and Azure AI Search (Foundry IQ) workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
 ## Accessing Your Lab Environment
  
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
