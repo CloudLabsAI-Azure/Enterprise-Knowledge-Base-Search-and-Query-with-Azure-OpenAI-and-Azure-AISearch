@@ -22,7 +22,7 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will create a new Azure Web App resource. The web app will be set up to use a Docker container from a specified image. You will configure the app with settings for subscription, resource group, and Linux plan, and then deploy the Docker image **yashmadan1357/prod-oai-embeddings-webapp:latest** to the web app.
 
-1. Navigate to the Home page of the Azure portal by clicking on the **Microsoft Azure (1)** and select **+ Create a resource (2)**.
+1. Navigate to the Home page of the Azure portal by clicking on **Microsoft Azure (1)** and select **+ Create a resource (2)**.
 
     ![](./media/E2T1S1-2804.png)
 
@@ -162,11 +162,11 @@ In this task, you will test the functionality of the deployed web app by browsin
 
 1. Once the file is opened, verify that it is in the **German language**. We will then use the web app to translate the file into English and obtain the results using Foundry Chat.
 
-1. Return to the web app page, in the left-hand menu, select **Add Document (1)**, check the box for **Translate document to English (2)**, and then click on **Browse files (3)**.
+1. Return to the web app page. In the left-hand menu, select **Add Document (1)**, check the box for **Translate document to English (2)**, and then click on **Browse files (3)**.
 
     ![](./media/29.png)
     
-1. Navigate to `C:\LabFiles` **(1)**, select **Emil und die Detektive book (2)** file and click **Open (3)**.
+1. Navigate to `C:\LabFiles` **(1)**, select the **Emil und die Detektive book (2)** file and click **Open (3)**.
 
     ![](./media/31.png)
 
@@ -213,12 +213,12 @@ In this task, you will test the functionality of the deployed web app by browsin
         - **Text Embedding and Indexing:**
             - **Microsoft Foundry Service Embeddings:** Converts the extracted text into high-dimensional vectors, encapsulating semantic meaning and context.
             
-            - **Azure AI Search:** Indexes these embeddings, enabling fast and efficient vector-based searches across the knowledge base.
+            - **Azure AI Search (Foundry IQ):** Indexes these embeddings, enabling fast and efficient vector-based searches across the knowledge base.
 
         - **Search and Answering:**
             - **Vector Search:** Uses Microsoft Foundry Embeddings to perform a semantic search, matching user queries to the most relevant documents based on vector similarity.
             
-            - **Azure AI Search:** Retrieves the top k relevant paragraphs from the indexed documents.
+            - **Azure AI Search (Foundry IQ):** Retrieves the top k relevant paragraphs from the indexed documents.
 
             - **Microsoft Foundry Answering Prompt:** Constructs a concise and contextually accurate response from the retrieved paragraphs. If required, answers can be translated back to the user's preferred language.
 
@@ -240,12 +240,11 @@ In this exercise, you have accomplished the following:
 
 - Created and deployed a web app from a Docker image
 - Added environment variables and checked the Docker deployment
-- Varified the uploaded file in the Storage account
+- Verified the uploaded file in the Storage account
 - Tested the web app
-
 
 ## Conclusion
 
-By completing this lab, **Enterprise Knowledge Base Search and Query with Microsoft Foundry and Azure AI**, you gained practical experience in building intelligent search solutions powered by Azure’s AI services. You began by generating document embeddings with Microsoft Foundry to capture semantic meaning and improve search relevance. You then implemented an advanced query and retrieval system using Azure AI Search Search, enabling efficient semantic search across the enterprise knowledge base. Additionally, you worked with Document Intelligence to extract structured data from documents and Translator to break language barriers, enhancing accessibility for global users. Finally, you automated the pipeline with Azure Functions, streamlining tasks such as document extraction, translation, embedding creation, and query handling. Through this integrated workflow, you developed a scalable knowledge search system that combines natural language understanding, multilingual support, and AI-driven insights to deliver accurate, context-aware results.
+By completing this lab, **Enterprise Knowledge Base Search and Query with Microsoft Foundry and Azure AI Search (Foundry IQ)**, you gained practical experience in building intelligent search solutions powered by Azure’s AI services. You began by generating document embeddings with Microsoft Foundry to capture semantic meaning and improve search relevance. You then implemented an advanced query and retrieval system using Azure AI Search (Foundry IQ), enabling efficient semantic search across the enterprise knowledge base. Additionally, you worked with Document Intelligence to extract structured data from documents and Translator to break language barriers, enhancing accessibility for global users. Finally, you automated the pipeline with Azure Functions, streamlining tasks such as document extraction, translation, embedding creation, and query handling. Through this integrated workflow, you developed a scalable knowledge search system that combines natural language understanding, multilingual support, and AI-driven insights to deliver accurate, context-aware results.
 
 ### 🎉 You have successfully completed the lab.
