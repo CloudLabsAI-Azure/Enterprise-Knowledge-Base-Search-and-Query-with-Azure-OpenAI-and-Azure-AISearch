@@ -22,20 +22,20 @@ In this exercise, you will complete the following tasks:
   - Task 1.1: Create a Microsoft Foundry Resource
   - Task 1.2: Deploy Models in Microsoft Foundry portal
 - Task 2: Create Azure AI Search Resources
-  - Task 2.1: Create an AI Search(Foundry IQ) Service
+  - Task 2.1: Create an AI Search (Foundry IQ) Service
   - Task 2.2: Create Document Intelligence Resource
   - Task 2.3: Create Translator Resource
 - Task 3: Deploy Azure Function with Embeddings  
 
 ### Task 1: Create a Microsoft Foundry Resource and Deploy Models
 
-In this task, you will begin by deploying a Microsoft Foundry resource through the Azure portal. This involves creating an Foundry resource, configuring it with the appropriate settings, and deploying models such as **gpt-5.4** and **text-embedding-ada-002** using the Microsoft Foundry portal.
+In this task, you will begin by deploying a Microsoft Foundry resource through the Azure portal. This involves creating a Foundry resource, configuring it with the appropriate settings, and deploying models such as **gpt-5.4** and **text-embedding-ada-002** using the Microsoft Foundry portal.
 
 Microsoft Foundry provides a unified experience for discovering, deploying, and managing foundation models for building AI-powered applications. Follow these steps to deploy a model using the Microsoft Foundry portal:
 
 ### Task 1.1: Create a Microsoft Foundry Resource
 
-1. Navigate to the Azure portal, In the search box, type **Microsoft Foundry (1)** and select **Microsoft Foundry (2)** from the search results.
+1. In the search box of the Azure portal, type **Microsoft Foundry (1)** and select **Microsoft Foundry (2)** from the search results.
 
    ![](media/foundrynew.png)
 
@@ -57,7 +57,7 @@ Microsoft Foundry provides a unified experience for discovering, deploying, and 
 
         ![](media/foundry2.png)
 
-1. Click **Review + Create**. Review the configuration and click **Create**.
+1. Click **Review + create**. Review the configuration and click **Create**.
     
     ![](media/foundry3.png)
 
@@ -87,8 +87,6 @@ In this task, you will deploy the AI models required for the lab using Microsoft
 
     ![](media/foundry8.png)
 
-### Deploy the GPT Model
-
 5. On the **Select a model** page, search for **gpt-5.4 (1)**, select **gpt-5.4 (2)**, and click **Deploy (3)** go to **Custom settings (4)**.
 
     ![](media/foundry9.png)
@@ -98,15 +96,16 @@ In this task, you will deploy the AI models required for the lab using Microsoft
 6. Configure the deployment using the following settings:
 
     - **Deployment name:** gpt-5.4 **(1)**
+    
     - **Deployment type:** Global Standard **(2)**
-    - **Tokens per Minute Rate Limit :** 40K **(3)**
-    - **Click Deploy (4)**
+    
+    - **Tokens per Minute Rate Limit:** **40K (3)**
+    
+    - Click **Deploy (4)**
 
         ![](media/foundry11.png)
 
         > **Note:** Copy the deployment name **gpt-5.4** and save it in Notepad. You will use it later in the lab.
-
-### Deploy the Embedding Model
 
 7. Click **Deploy(1)** again and select **Deploy base model(2)** In Deployments.
 
@@ -121,9 +120,12 @@ In this task, you will deploy the AI models required for the lab using Microsoft
 9. Configure the deployment using the following settings:
 
     - **Deployment name:** text-embedding-ada-002 **(1)**
+    
     - **Deployment type:** Global Standard **(2)**
-    - **Tokens per Minute Rate Limit:** 40K **(3)**
-    - **Click Deploy (4)**
+    
+    - **Tokens per Minute Rate Limit:** **40K (3)**
+    
+    - Click **Deploy (4)**
 
         ![](media/foundry15.png)
 
@@ -177,7 +179,7 @@ In this task, you will create the required Azure resources for AI Search, Docume
 
     ![](./media/E1T2.2S1-2804.png)
 
-1. On the **Microsoft Foundry | Document intelligence(1)** blade, click on **+ Create(2)**.
+1. On the **Microsoft Foundry | Document intelligence (1)** blade, click on **+ Create (2)**.
 
     ![](./media/l12-12-02.png)
 
@@ -231,7 +233,7 @@ In this task, you will create the required Azure resources for AI Search, Docume
 
       ![](./media/am10.png)
     
-1. Review the configuration, and click on the **Create**.
+1. Review the configuration and click on **Create**.
 
     ![](./media/am27.png)
 
@@ -265,7 +267,7 @@ In this task, you will deploy Azure Functions that automate the document process
 
     ![](./media/am14.png)
 
-1. Paste the template you copied in step 2, in the ARM template editor, locate the **AIFoundryModel** parameter and verify the **defaultValue** **(line no: 104 )** is set to `gpt-5.4` **(1)**.Also verify that **AIFoundryDeploymentType** **(line no: 111)** is set to `Chat` **(2)**.
+1. Paste the template you copied in step 2 into the ARM template editor, locate the **AIFoundryModel** parameter and verify the **defaultValue** **(line no: 104 )** is set to `gpt-5.4` **(1)**. Also verify that **AIFoundryDeploymentType** **(line no: 111)** is set to `Chat` **(2)**.
 
      ![](./media/new01.png)
 
@@ -273,7 +275,7 @@ In this task, you will deploy Azure Functions that automate the document process
 
      ![](./media/new02.png)
 
-1. Click on the **Save**.
+1. Click on **Save**.
 
     ![](./media/new03.png)
 
@@ -354,7 +356,7 @@ In this task, you will deploy Azure Functions that automate the document process
 
 In this exercise, you have accomplished the following:
 
-- Provisioned an Microsoft Foundry resource.
+- Provisioned a Microsoft Foundry resource.
 - Deployed models using the Microsoft Foundry portal.
 - Deployed a Document Intelligence resource.
 - Deployed a Translator resource.
