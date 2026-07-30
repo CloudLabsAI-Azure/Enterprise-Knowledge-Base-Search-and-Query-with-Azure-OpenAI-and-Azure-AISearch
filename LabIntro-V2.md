@@ -94,7 +94,7 @@ Use the **slider (three vertical dots)** located between the **Virtual Machine**
 
 ## Let's Get Started with Azure Portal
  
-1. On your virtual machine, click on the Azure Portal icon as shown below:
+1. On your virtual machine, click on the **Azure Portal** icon as shown below:
  
    ![](./media/7.png)
 
