@@ -20,11 +20,11 @@ In this exercise, you will complete the following tasks:
 
 - Task 1: Create a Microsoft Foundry Resource and Deploy Models
   - Task 1.1: Create a Microsoft Foundry Resource
-  - Task 1.2: Deploy Models in Microsoft Foundry portal
-- Task 2: Create Azure AI Search Resources
+  - Task 1.2: Deploy Models in the Microsoft Foundry portal
+- Task 2: Create Azure AI Search (Foundry IQ) Resources
   - Task 2.1: Create an AI Search (Foundry IQ) Service
-  - Task 2.2: Create Document Intelligence Resource
-  - Task 2.3: Create Translator Resource
+  - Task 2.2: Create a Document Intelligence Resource
+  - Task 2.3: Create a Translator Resource
 - Task 3: Deploy Azure Function with Embeddings  
 
 ### Task 1: Create a Microsoft Foundry Resource and Deploy Models
@@ -131,7 +131,7 @@ In this task, you will deploy the AI models required for the lab using Microsoft
 
         > **Note:** Copy the deployment name **text-embedding-ada-002** and save it in Notepad. You will use it later in the lab.
 
-## Task 2: Create Azure AI Search Resources
+## Task 2: Create Azure AI Search (Foundry IQ) Resources
 
 In this task, you will create the required Azure resources for AI Search, Document Intelligence, and Translator services. This involves setting up each service with the correct configurations, including subscription, resource group, and pricing tier, to support the document processing pipeline.
 
@@ -257,7 +257,7 @@ In this task, you will deploy Azure Functions that automate the document process
 
     ![](./media/am12.png)
 
-    >Note: The `deploy-01.json` file is an Azure Resource Manager (ARM) template that automates the deployment of the infrastructure required for this lab. It defines resources such as the Storage Account, Azure Function App, Azure AI Search, Azure AI Document Intelligence, Translator, and Microsoft Foundry integration, along with their configurations and application settings. During the lab, you will update a few parameters in this template before deploying the complete solution.
+    >Note: The `deploy-01.json` file is an Azure Resource Manager (ARM) template that automates the deployment of the infrastructure required for this lab. It defines resources such as the Storage Account, Azure Function App, Azure AI Search (Foundry IQ), Azure AI Document Intelligence, Translator, and Microsoft Foundry integration, along with their configurations and application settings. During the lab, you will update a few parameters in this template before deploying the complete solution.
 
 1. Navigate back to the Azure Portal, type **Deploy a custom template (1)** in the search box, and select **Deploy a custom template (2)** from the results.
 
