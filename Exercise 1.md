@@ -41,7 +41,7 @@ Microsoft Foundry provides a unified experience for discovering, deploying, and 
 
 1. In the left navigation pane, expand **Use with Foundry (1)**, select **Foundry (2)**, and then click **+ Create (3)** to create a Foundry resource.
 
-    ![](media/foundry1.png)
+    ![](media/2026(1).png)
 
 1. On the **Basics** tab, provide the following details:
 
@@ -55,11 +55,15 @@ Microsoft Foundry provides a unified experience for discovering, deploying, and 
 
     - **Default project name:** proj-default **(5)**
 
-        ![](media/foundry2.png)
+    - Click on **Review + create (6)**.
 
-1. Click **Review + create**. Review the configuration and click **Create**.
+        ![](media/2026(2).png)
+
+1. Wait for the deployment to complete, and then click on **Go to resource**.
     
     ![](media/foundry3.png)
+
+    > **Note:** The Foundry resource typically deploys in 2-3 minutes.
 
 1. Once the deployment is complete, click on **Go to resource**
 
@@ -79,11 +83,9 @@ In this task, you will deploy the AI models required for the lab using Microsoft
 
     > **Note:** Copy the **API key** and save it in Notepad. You will use it later in the lab.
 
-1. From the top navigation bar, select **Build (1)**. In the left navigation pane, click **Models (2)**, ensure the **Deployments (3)** tab is selected, then click **Deploy (4)** and choose **Deploy a base model (5)**.
+1. From the top navigation bar, select **Build (1)**. In the left navigation pane, click **Deployments (2)**, ensure the **Deployed models (3)** tab is selected, and then click **Deploy a base model (4)**.
 
-    ![](media/foundry7.png)
-
-    ![](media/foundry8.png)
+    ![](media/2026(3).png)
 
 1. In the **Models** page, enter **gpt-5.4** in the search box **(1)**. From the search results, select the **gpt-5.4** model **(2)** to continue with the deployment.
 
@@ -107,9 +109,9 @@ In this task, you will deploy the AI models required for the lab using Microsoft
 
         > **Note:** Copy the deployment name **gpt-5.4** and save it in Notepad. You will use it later in the lab.
 
-1. Navigate back to **Build (1)**. In the left navigation pane, select **Models (2)** and verify that the **Deployments (3)** tab is selected. Then, click **Deploy (4)** and choose **Deploy a base model (5)** to deploy another model.
+1. In the left navigation pane, click **Deployments (1)**, ensure the **Deployed models (2)** tab is selected, and then click **Deploy a base model (3)** to deploy another model.
 
-    ![](media/foundry12.png)
+    ![](media/2026(4).png)
 
 1. On the **Models** page, enter **text-embedding-ada-002** in the search box **(1)**. From the search results, select the **text-embedding-ada-002** model **(2)** to open its deployment page.
 
@@ -259,7 +261,7 @@ In this task, you will deploy Azure Functions that automate the document process
 
     ![](./media/am12.png)
 
-    >Note: The `deploy-01.json` file is an Azure Resource Manager (ARM) template that automates the deployment of the infrastructure required for this lab. It defines resources such as the Storage Account, Azure Function App, Azure AI Search (Foundry IQ), Azure AI Document Intelligence, Translator, and Microsoft Foundry integration, along with their configurations and application settings. During the lab, you will update a few parameters in this template before deploying the complete solution.
+    > **Note:** The **`deploy-01.json`** file is an Azure Resource Manager (ARM) template that automates the deployment of the infrastructure required for this lab. It provisions resources including an **Azure Storage Account**, **Azure Function App**, **Azure AI Search (Foundry IQ)**, **Azure AI Document Intelligence**, **Azure AI Translator**, and **Microsoft Foundry** integration, along with their associated configurations and application settings. During this lab, you will update the required template parameters before deploying the complete solution.
 
 1. Navigate back to the Azure Portal, type **Deploy a custom template (1)** in the search box, and select **Deploy a custom template (2)** from the results.
 
@@ -298,7 +300,7 @@ In this task, you will deploy Azure Functions that automate the document process
     |**Document Intelligence** |Document-intelligence-<inject key="Deployment ID" enableCopy="false"></inject> |
     |**Translator Name** | Translator-<inject key="Deployment ID" enableCopy="false"></inject> |
     |**AI Foundry Name** | foundry-<inject key="Deployment ID" enableCopy="false"></inject> |
-    |**AI Foundry Key** | Paste the key that you copied in Task 1.2, Point 2 |
+    |**AI Foundry Key** | Paste the key that you copied in Task 1.2, Step 2 |
     |**AI Foundry Project Name** | proj-default |
 
       ![](./media/new04.png)
