@@ -107,8 +107,6 @@ In this task, you will deploy the AI models required for the lab using Microsoft
 
         ![](media/foundry11.png)
 
-        > **Note:** Copy the deployment name **gpt-5.4** and save it in Notepad. You will use it later in the lab.
-
 1. In the left navigation pane, click **Deployments (1)**, ensure the **Deployed models (2)** tab is selected, and then click **Deploy a base model (3)** to deploy another model.
 
     ![](media/2026(4).png)
@@ -132,8 +130,6 @@ In this task, you will deploy the AI models required for the lab using Microsoft
     - Click **Deploy (4)**
 
         ![](media/foundry15.png)
-
-        > **Note:** Copy the deployment name **text-embedding-ada-002** and save it in Notepad. You will use it later in the lab.
 
 ## Task 2: Create Azure AI Search (Foundry IQ) Resources
 
