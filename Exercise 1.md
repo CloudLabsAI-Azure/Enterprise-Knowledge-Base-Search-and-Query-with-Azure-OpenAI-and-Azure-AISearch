@@ -39,11 +39,11 @@ Microsoft Foundry provides a unified experience for discovering, deploying, and 
 
    ![](media/foundrynew.png)
 
-1. On the **Microsoft Foundry** page, under Use with Foundry click **+ Create**.
+1. In the left navigation pane, expand **Use with Foundry (1)**, select **Foundry (2)**, and then click **+ Create (3)** to create a Foundry resource.
 
     ![](media/foundry1.png)
 
-1. On the **Basics** tab, configure the following settings:
+1. On the **Basics** tab, provide the following details:
 
     - **Subscription:** Default - Pre-assigned subscription **(1)**
 
@@ -69,7 +69,7 @@ Microsoft Foundry provides a unified experience for discovering, deploying, and 
 
 In this task, you will deploy the AI models required for the lab using Microsoft Foundry. The **gpt-5.4** model will generate grounded responses, while the **text-embedding-ada-002** model will generate vector embeddings for semantic search.
 
-1. In the **Microsoft Foundry** resource click on **Go to Foundry portal**.
+1. On the Foundry resource **Overview** page, click on **Go to Foundry portal**.
 
     ![](media/foundry5-new.png)
 
@@ -79,17 +79,17 @@ In this task, you will deploy the AI models required for the lab using Microsoft
 
     > **Note:** Copy the **API key** and save it in Notepad. You will use it later in the lab.
 
-1. From the navigation pane, select **Build**.
+1. From the top navigation bar, select **Build (1)**. In the left navigation pane, click **Models (2)**, ensure the **Deployments (3)** tab is selected, then click **Deploy (4)** and choose **Deploy a base model (5)**.
 
     ![](media/foundry7.png)
 
-1. Click **Deploy(1)** and select **Deploy base model (2)** In Deployments.
-
     ![](media/foundry8.png)
 
-5. On the **Select a model** page, search for **gpt-5.4 (1)**, select **gpt-5.4 (2)**, and click **Deploy (3)** go to **Custom settings (4)**.
+1. In the **Models** page, enter **gpt-5.4** in the search box **(1)**. From the search results, select the **gpt-5.4** model **(2)** to continue with the deployment.
 
     ![](media/foundry9.png)
+
+1. On the **gpt-5.4** model details page, click **Deploy (1)**, and then select **Custom settings (2)** to configure the deployment with your preferred settings.
 
     ![](media/foundry10.png)
 
@@ -107,13 +107,15 @@ In this task, you will deploy the AI models required for the lab using Microsoft
 
         > **Note:** Copy the deployment name **gpt-5.4** and save it in Notepad. You will use it later in the lab.
 
-7. Click **Deploy(1)** again and select **Deploy base model(2)** In Deployments.
+1. Navigate back to **Build (1)**. In the left navigation pane, select **Models (2)** and verify that the **Deployments (3)** tab is selected. Then, click **Deploy (4)** and choose **Deploy a base model (5)** to deploy another model.
 
     ![](media/foundry12.png)
 
-8. On the **Select a model** page, search for **text-embedding-ada-002 (1)**, select **text-embedding-ada-002 (2)**, and click **Deploy (3)** go to **Custom settings (4)**.
+1. On the **Models** page, enter **text-embedding-ada-002** in the search box **(1)**. From the search results, select the **text-embedding-ada-002** model **(2)** to open its deployment page.
 
     ![](media/foundry13.png)
+
+1. On the **text-embedding-ada-002** model details page, click **Deploy (1)**, and then select **Custom settings (2)** to configure the deployment.
 
     ![](media/foundry14.png)
 
