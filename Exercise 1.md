@@ -95,7 +95,7 @@ In this task, you will deploy the AI models required for the lab using Microsoft
 
     ![](media/foundry10.png)
 
-6. Configure the deployment using the following settings:
+1. Configure the deployment using the following settings:
 
     - **Deployment name:** gpt-5.4 **(1)**
     
@@ -119,7 +119,7 @@ In this task, you will deploy the AI models required for the lab using Microsoft
 
     ![](media/foundry14.png)
 
-9. Configure the deployment using the following settings:
+1. Configure the deployment using the following settings:
 
     - **Deployment name:** text-embedding-ada-002 **(1)**
     
