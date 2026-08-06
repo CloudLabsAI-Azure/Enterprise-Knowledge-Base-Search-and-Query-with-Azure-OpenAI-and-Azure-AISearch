@@ -88,7 +88,7 @@ To adjust the zoom level for the environment page, click the **A↕** icon locat
 
 ## Resize the Virtual Machine View
 
-Use the **lider (three vertical dots)** located between the **Virtual Machine** and the **Lab Guide** panes to adjust the display size, allowing you to customize the layout based on your preference.
+Use the **lider (three vertical dots)** located between the **Virtual Machine** and the **Guide** panes to adjust the display size, allowing you to customize the layout based on your preference.
 
    ![](media/slider.png)
 

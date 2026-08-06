@@ -59,13 +59,13 @@ Microsoft Foundry provides a unified experience for discovering, deploying, and 
 
         ![](media/2026(2).png)
 
-1. Wait for the deployment to complete, and then click on **Go to resource**.
+1. Review the configuration details on the **Review + create** tab. Click **Create** to begin provisioning the resource.
     
     ![](media/foundry3.png)
 
     > **Note:** The Foundry resource typically deploys in 2-3 minutes.
 
-1. Once the deployment is complete, click on **Go to resource**
+1. Wait for the deployment to complete, and then click on **Go to resource**.
 
     ![](media/foundry4.png)
 
@@ -83,9 +83,13 @@ In this task, you will deploy the AI models required for the lab using Microsoft
 
     > **Note:** Copy the **API key** and save it in Notepad. You will use it later in the lab.
 
-1. From the top navigation bar, select **Build (1)**. In the left navigation pane, click **Deployments (2)**, ensure the **Deployed models (3)** tab is selected, and then click **Deploy a base model (4)**.
+1. From the top navigation bar, select **Build (1)**. In the left navigation pane, click **Models (2)**, ensure the **Deployments (3)** tab is selected, and then click **Deploy a base model (4)**.
 
-    ![](media/2026(3).png)
+    ![](media/2026-1.png)
+
+    > **Note:** Depending on the portal experience, select **Build (1)** from the top navigation bar, then click **Deployments (2)** in the left navigation pane. Ensure the **Deployed models (3)** tab is selected, and then click **Deploy a base model (4)**.
+    >
+    >![](media/2026(3).png)
 
 1. In the **Models** page, enter **gpt-5.4** in the search box **(1)**. From the search results, select the **gpt-5.4** model **(2)** to continue with the deployment.
 
@@ -107,9 +111,13 @@ In this task, you will deploy the AI models required for the lab using Microsoft
 
         ![](media/foundry11.png)
 
-1. In the left navigation pane, click **Deployments (1)**, ensure the **Deployed models (2)** tab is selected, and then click **Deploy a base model (3)** to deploy another model.
+1. In the left navigation pane, click **Models (1)**, ensure the **Deployments (2)** tab is selected, and then click **Deploy a base model (3)** to deploy another model.
 
-    ![](media/2026(4).png)
+    ![](media/2026-2.png)
+
+    > **Note:** Depending on the portal experience, click **Deployments (1)** in the left navigation pane, verify that the **Deployed models (2)** tab is selected, and then click **Deploy a base model (3)**.
+    >
+    >![](media/2026(4).png)
 
 1. On the **Models** page, enter **text-embedding-ada-002** in the search box **(1)**. From the search results, select the **text-embedding-ada-002** model **(2)** to open its deployment page.
 
@@ -163,7 +171,7 @@ In this task, you will create the required Azure resources for AI Search, Docume
 
       ![](./media/am6.png)
 
-1. Review the configuration, and click on **Create**.
+1. Review the configuration on **Review + create** and click on **Create**.
 
      ![](./media/lab1-12-8.png)
 
@@ -194,6 +202,8 @@ In this task, you will create the required Azure resources for AI Search, Docume
     - Name: **Document-intelligence-<inject key="Deployment ID" enableCopy="false"></inject> (4)**
     
     - Pricing tier: **Standard S0 (1 Call per minute for training API) (5)**
+
+    - Click on **Review + create (6)**
 
       ![](./media/am8.png)
         
@@ -279,7 +289,7 @@ In this task, you will deploy Azure Functions that automate the document process
 
     ![](./media/new03.png)
 
-1. On the **Basics** tab of **Custom deployment** page, enter the required details given below:
+1. On the **Basics** tab of **Custom deployment** page, enter the required details given below and click on **Review + create**:
 
     |Variables	|Values|
     |---|---|
