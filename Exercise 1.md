@@ -139,6 +139,12 @@ In this task, you will deploy the AI models required for the lab using Microsoft
 
         ![](media/foundry15.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="76158c08-a6fe-4e2f-ba59-d6556a5a88e4" />
+
 ## Task 2: Create Azure AI Search (Foundry IQ) Resources
 
 In this task, you will create the required Azure resources for AI Search, Document Intelligence, and Translator services. This involves setting up each service with the correct configurations, including subscription, resource group, and pricing tier, to support the document processing pipeline.
